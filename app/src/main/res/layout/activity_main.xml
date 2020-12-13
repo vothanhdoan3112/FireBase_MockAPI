@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <fragment
+        android:id="@+id/fragment"
+        android:name="com.duho.login_crud.fragment_1"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_edit"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:background="#17A1DF"
+        android:text="edit"
+        android:textSize="8sp"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_getData"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btn_getData" />
+
+    <Button
+        android:id="@+id/btn_Add"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="4dp"
+        android:background="#17A1DF"
+        android:text="@string/add"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/btn_Remove"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fragment" />
+
+    <Button
+        android:id="@+id/btn_Remove"
+        android:layout_width="83dp"
+        android:layout_height="39dp"
+        android:background="#17A1DF"
+        android:text="@string/remove"
+        android:textSize="8sp"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_Add"
+        app:layout_constraintEnd_toStartOf="@+id/btn_getData"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btn_Add" />
+
+    <Button
+        android:id="@+id/btn_getData"
+        android:layout_width="83dp"
+        android:layout_height="40dp"
+        android:background="#17A1DF"
+        android:text="getall"
+        android:textSize="8sp"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_Remove"
+        app:layout_constraintEnd_toStartOf="@+id/btn_edit"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btn_Remove" />
+
+    <fragment
+        android:id="@+id/fragment2"
+        android:name="com.duho.login_crud.fragment_2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="@+id/fragment"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/fragment"
+        app:layout_constraintTop_toBottomOf="@+id/btn_Add" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
